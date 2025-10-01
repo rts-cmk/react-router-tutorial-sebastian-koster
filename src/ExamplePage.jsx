@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const ExamplePage = () => {
     const [users, setUsers] = useState([]);
 
@@ -15,7 +16,7 @@ const ExamplePage = () => {
         <div>
             <h1>Example Page</h1>
             <p>This is an example page demonstrating data fetching and dynamic routing.</p>
-            <ul>
+            <ul className="list-none">
                 {users.map(user => (
                     <li key={user.id}>
                         <Link to={`/example/${user.id}`}>
