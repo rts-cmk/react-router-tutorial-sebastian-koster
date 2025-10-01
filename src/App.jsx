@@ -2,7 +2,9 @@ export default function App() {
 
   return (
     <>
-    <h1>WELCOME!</h1>
+    <div className="bg-red-500 text-white p-4">
+  This is a test for Tailwind CSS.
+</div>
     </>
   )
 }
