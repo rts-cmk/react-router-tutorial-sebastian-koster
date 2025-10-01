@@ -1,8 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css';
+import './index.css'
 
 // Pages
 import ConclusionPage from './ConclusionPage.jsx'
@@ -13,9 +12,10 @@ import Outro from './OutroPage.jsx'
 import Welcome from './WelcomePage.jsx'
 import WhatIsRouter from './WhatIsRouterPage.jsx'
 import NotFoundPage from './NotFoundPage.jsx'
+import HomePage from './App.jsx'
 
 const router = createBrowserRouter([
-  {path: '/', element: <App />},
+  {path: '/', element: <HomePage />},
   {path: '/welcome', element: <Welcome />},
   {path: '/what-is-router', element: <WhatIsRouter />},
   {path: '/how-to-use', element: <HowToUse />},
