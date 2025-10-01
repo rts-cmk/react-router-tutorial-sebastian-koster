@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // Pages
 import ConclusionPage from './ConclusionPage.jsx'
 import Example from './ExamplePage.jsx'
+import ExampleItems from './ExampleItemsPage.jsx'
 import HowToUse from './HowToUsePage.jsx'
 import Outro from './OutroPage.jsx'
 import Welcome from './WelcomePage.jsx'
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   {path: '/what-is-router', element: <WhatIsRouter />},
   {path: '/how-to-use', element: <HowToUse />},
   {path: '/example', element: <Example />},
+  {path: '/example/:id', element: <ExampleItems />},
   {path: '/conclusion', element: <ConclusionPage />},
   {path: '/outro', element: <Outro />},
   {path: '*', element: <NotFoundPage />},
