@@ -123,7 +123,7 @@ export const WelcomePage = () => {
                 <div className="text-center">
                     <Link to="/what-is-router">
                         <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 mx-auto">
-                            Let's Get Started! <span className="text-2xl">🚀</span>
+                            Let's Get Started! <span className="text-2xl"></span>
                         </button>
                     </Link>
                 </div>
