@@ -12,10 +12,10 @@ import Outro from './OutroPage.jsx'
 import Welcome from './WelcomePage.jsx'
 import WhatIsRouter from './WhatIsRouterPage.jsx'
 import NotFoundPage from './NotFoundPage.jsx'
-import HomePage from './App.jsx'
+import App from './App.jsx'
 
 const router = createBrowserRouter([
-  {path: '/', element: <HomePage />},
+  {path: '/', element: <App />},
   {path: '/welcome', element: <Welcome />},
   {path: '/what-is-router', element: <WhatIsRouter />},
   {path: '/how-to-use', element: <HowToUse />},
