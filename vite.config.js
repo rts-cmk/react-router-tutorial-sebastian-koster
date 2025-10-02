@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/react-router-tutorial-sebastian-koster/',
+  build: {
+    outDir: 'docs'
+  }
 })
