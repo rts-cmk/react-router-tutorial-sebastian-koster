@@ -15,8 +15,9 @@ src/
 ├── ExampleItemsPage.jsx
 ├── ConclusionPage.jsx
 ├── OutroPage.jsx
-├── NotFoundPage.jsx
-└── SharedComponents.jsx (optional)
+└── NotFoundPage.jsx
+./components/
+└─ SharedComponents.jsx (optional)
 ```
 
 ### 2. Dependencies
