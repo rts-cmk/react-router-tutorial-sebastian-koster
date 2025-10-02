@@ -100,71 +100,71 @@ const { id } = useParams();`,s=()=>{navigator.clipboard.writeText(o),r(!0),setTi
                     }
                 }
             `})]})},En=({code:i,language:r="jsx"})=>{const[o,s]=D.useState(!1),d=()=>{navigator.clipboard.writeText(i),s(!0),setTimeout(()=>s(!1),2e3)};return c.jsxs("div",{className:"relative my-6 rounded-lg overflow-hidden bg-gray-900 shadow-lg",children:[c.jsxs("div",{className:"flex justify-between items-center px-4 py-2 bg-gray-800 border-b border-gray-700",children:[c.jsx("span",{className:"text-xs text-gray-400 uppercase tracking-wide",children:r}),c.jsx("button",{onClick:d,className:"text-xs px-3 py-1 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors duration-200",children:o?"✓ Copied!":"Copy"})]}),c.jsx("pre",{className:"p-4 overflow-x-auto",children:c.jsx("code",{className:"text-sm text-gray-100 font-mono",children:i})})]})},lp=()=>{const i=qs(),r=()=>{window.confirm("This demonstrates useNavigate()! Would you like to go to the example page?")&&i("/example")};return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 p-6 pt-12 pb-20",children:[c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500",style:{width:"42%"}})}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"How to Use React Router"}),c.jsx("p",{className:"text-xl text-gray-600",children:"A step-by-step guide"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"📦"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 1: Installation"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"First, install React Router in your project:"}),c.jsx(En,{code:"npm install react-router-dom",language:"bash"}),c.jsx("div",{className:"bg-blue-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsx("strong",{children:"Note:"})," Make sure you're using React 18 or higher for the best compatibility."]})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"⚙️"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 2: Setup Router"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create your router configuration in main.jsx:"}),c.jsx(En,{code:`import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
+                  import HomePage from './HomePage';
+                  import AboutPage from './AboutPage';
 
-const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-]);
+                  const router = createBrowserRouter([
+                    { path: '/', element: <HomePage /> },
+                    { path: '/about', element: <AboutPage /> },
+                  ]);
 
-createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);`}),c.jsxs("div",{className:"mt-4 p-4 bg-purple-50 rounded-lg",children:[c.jsx("h4",{className:"font-semibold text-gray-800 mb-2",children:"Key Parts Explained:"}),c.jsxs("ul",{className:"space-y-2 text-sm text-gray-700",children:[c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"path"}),' - The URL route (e.g., "/" for homepage)']}),c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"element"})," - The component to render at that route"]}),c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"RouterProvider"})," - Wraps your app and provides routing"]})]})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🔗"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 3: Navigate with Link"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Use the Link component for navigation (like an enhanced anchor tag):"}),c.jsx(En,{code:`import { Link } from 'react-router-dom';
+                  createRoot(document.getElementById('root')).render(
+                    <RouterProvider router={router} />
+                  );`}),c.jsxs("div",{className:"mt-4 p-4 bg-purple-50 rounded-lg",children:[c.jsx("h4",{className:"font-semibold text-gray-800 mb-2",children:"Key Parts Explained:"}),c.jsxs("ul",{className:"space-y-2 text-sm text-gray-700",children:[c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"path"}),' - The URL route (e.g., "/" for homepage)']}),c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"element"})," - The component to render at that route"]}),c.jsxs("li",{children:[c.jsx("code",{className:"bg-purple-100 px-2 py-0.5 rounded",children:"RouterProvider"})," - Wraps your app and provides routing"]})]})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🔗"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 3: Navigate with Link"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Use the Link component for navigation (like an enhanced anchor tag):"}),c.jsx(En,{code:`import { Link } from 'react-router-dom';
 
-function Navigation() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-  );
-}`}),c.jsxs("div",{className:"bg-blue-50 rounded-lg p-4 mt-4",children:[c.jsxs("p",{className:"text-sm text-gray-700 mb-3",children:[c.jsx("strong",{children:"Why Link instead of <a>?"})," Link prevents full page reloads, making navigation instant and smooth!"]}),c.jsxs("div",{className:"flex gap-3",children:[c.jsx(et,{to:"/welcome",className:"px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm",children:"Try a Link!"}),c.jsx("span",{className:"text-gray-500 self-center",children:"← This uses <Link>"})]})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🧭"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 4: useNavigate Hook"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Navigate programmatically after actions like form submissions:"}),c.jsx(En,{code:`import { useNavigate } from 'react-router-dom';
+                  function Navigation() {
+                    return (
+                      <nav>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/contact">Contact</Link>
+                      </nav>
+                    );
+                  }`}),c.jsxs("div",{className:"bg-blue-50 rounded-lg p-4 mt-4",children:[c.jsxs("p",{className:"text-sm text-gray-700 mb-3",children:[c.jsx("strong",{children:"Why Link instead of <a>?"})," Link prevents full page reloads, making navigation instant and smooth!"]}),c.jsxs("div",{className:"flex gap-3",children:[c.jsx(et,{to:"/welcome",className:"px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm",children:"Try a Link!"}),c.jsx("span",{className:"text-gray-500 self-center",children:"← This uses <Link>"})]})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🧭"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 4: useNavigate Hook"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Navigate programmatically after actions like form submissions:"}),c.jsx(En,{code:`import { useNavigate } from 'react-router-dom';
 
-function LoginForm() {
-  const navigate = useNavigate();
+                  function LoginForm() {
+                    const navigate = useNavigate();
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ... login logic
-    navigate('/dashboard'); // Redirect after login
-  };
+                    const handleSubmit = (e) => {
+                      e.preventDefault();
+                      // ... login logic
+                      navigate('/dashboard'); // Redirect after login
+                    };
   
-  return (
-    <form onSubmit={handleSubmit}>
-      {/* form fields */}
-      <button type="submit">Login</button>
-    </form>
-  );
-}`}),c.jsxs("div",{className:"mt-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4",children:[c.jsx("p",{className:"text-sm text-gray-700 mb-3",children:c.jsx("strong",{children:"When to use useNavigate:"})}),c.jsxs("ul",{className:"text-sm text-gray-700 space-y-1 ml-4",children:[c.jsx("li",{children:"• After form submissions"}),c.jsx("li",{children:"• After API calls complete"}),c.jsx("li",{children:"• In event handlers"}),c.jsx("li",{children:"• For redirects based on logic"})]}),c.jsx("button",{onClick:r,className:"mt-4 px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors shadow-md hover:shadow-lg",children:"Try useNavigate Example"})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🎯"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 5: Dynamic Routes"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create routes with parameters using useParams:"}),c.jsx(En,{code:`// In your router config:
-{ path: '/user/:id', element: <UserProfile /> }
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        {/* form fields */}
+                        <button type="submit">Login</button>
+                      </form>
+                    );
+                  }`}),c.jsxs("div",{className:"mt-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4",children:[c.jsx("p",{className:"text-sm text-gray-700 mb-3",children:c.jsx("strong",{children:"When to use useNavigate:"})}),c.jsxs("ul",{className:"text-sm text-gray-700 space-y-1 ml-4",children:[c.jsx("li",{children:"• After form submissions"}),c.jsx("li",{children:"• After API calls complete"}),c.jsx("li",{children:"• In event handlers"}),c.jsx("li",{children:"• For redirects based on logic"})]}),c.jsx("button",{onClick:r,className:"mt-4 px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors shadow-md hover:shadow-lg",children:"Try useNavigate Example"})]})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🎯"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 5: Dynamic Routes"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create routes with parameters using useParams:"}),c.jsx(En,{code:`// In your router config:
+                  { path: '/user/:id', element: <UserProfile /> }
 
-// In your component:
-import { useParams } from 'react-router-dom';
+                  // In your component:
+                  import { useParams } from 'react-router-dom';
 
-function UserProfile() {
-  const { id } = useParams();
+                  function UserProfile() {
+                    const { id } = useParams();
   
-  return <h1>User Profile: {id}</h1>;
-}
+                    return <h1>User Profile: {id}</h1>;
+                  }
 
-// Links:
-<Link to="/user/123">User 123</Link>
-<Link to="/user/456">User 456</Link>`}),c.jsx("div",{className:"bg-green-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700 mb-2",children:[c.jsx("strong",{className:"text-green-700",children:"✨ Coming up next:"})," You'll see this in action with real data fetching!"]})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🚫"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 6: Handle 404 Errors"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Catch all unmatched routes with a wildcard:"}),c.jsx(En,{code:`const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-  { path: '*', element: <NotFoundPage /> }, // Catches everything else
-]);
+                  // Links:
+                  <Link to="/user/123">User 123</Link>
+                  <Link to="/user/456">User 456</Link>`}),c.jsx("div",{className:"bg-green-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700 mb-2",children:[c.jsx("strong",{className:"text-green-700",children:"✨ Coming up next:"})," You'll see this in action with real data fetching!"]})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6 hover:shadow-2xl transition-shadow duration-300",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🚫"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 6: Handle 404 Errors"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Catch all unmatched routes with a wildcard:"}),c.jsx(En,{code:`const router = createBrowserRouter([
+                    { path: '/', element: <HomePage /> },
+                    { path: '/about', element: <AboutPage /> },
+                    { path: '*', element: <NotFoundPage /> }, // Catches everything else
+                  ]);
 
-function NotFoundPage() {
-  return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <Link to="/">Go Home</Link>
-    </div>
-  );
-}`}),c.jsxs("div",{className:"bg-yellow-50 rounded-lg p-4 mt-4",children:[c.jsxs("p",{className:"text-sm text-gray-700 mb-3",children:[c.jsx("strong",{children:"Pro tip:"})," Put the wildcard route (*) last in your route list. It acts as a catch-all for any unmatched URLs!"]}),c.jsx("a",{href:"/this-does-not-exist",className:"text-blue-600 hover:underline text-sm",children:"Try visiting a non-existent page →"})]})]}),c.jsxs("div",{className:"flex justify-between items-center mt-12 gap-4",children:[c.jsx(et,{to:"/what-is-router",children:c.jsxs("button",{className:"px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all duration-200 flex items-center gap-2",children:[c.jsx("span",{children:"←"})," Previous"]})}),c.jsx(et,{to:"/example",children:c.jsxs("button",{className:"px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2",children:["See Live Example ",c.jsx("span",{children:"→"})]})})]})]})]})},np=()=>{const[i,r]=D.useState(!1);return D.useEffect(()=>{r(!0)},[]),c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50 flex items-center justify-center p-6 relative overflow-hidden",children:[c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-1000",style:{width:"100%"}})}),i&&c.jsx("div",{className:"absolute inset-0 pointer-events-none",children:[...Array(30)].map((o,s)=>c.jsx("div",{className:"absolute animate-float",style:{left:`${Math.random()*100}%`,top:"-20px",animationDelay:`${Math.random()*2}s`,animationDuration:`${3+Math.random()*2}s`},children:c.jsx("span",{className:"text-2xl",children:["🎉","🎊","⭐","✨","🚀","💫"][Math.floor(Math.random()*6)]})},s))}),c.jsxs("div",{className:"max-w-3xl w-full relative z-10",children:[c.jsx("div",{className:"text-center mb-8",children:c.jsxs("div",{className:"inline-block relative",children:[c.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse blur-xl opacity-50"}),c.jsx("div",{className:"relative bg-white p-8 rounded-full shadow-2xl",children:c.jsx("span",{className:"text-7xl",children:"🏆"})})]})}),c.jsxs("div",{className:"bg-white bg-opacity-90 backdrop-blur rounded-3xl shadow-2xl p-10 text-center",children:[c.jsx("h1",{className:"text-5xl font-bold text-gray-800 mb-4",children:"Congratulations!"}),c.jsx("p",{className:"text-2xl text-gray-600 mb-8",children:"You've completed the React Router guide"}),c.jsx("div",{className:"bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-6 mb-8",children:c.jsx("p",{className:"text-lg text-gray-700 leading-relaxed",children:"You've learned how to navigate between pages, create dynamic routes, handle URL parameters, and manage 404 errors. These are essential skills for building modern React applications!"})}),c.jsxs("div",{className:"grid md:grid-cols-3 gap-4 mb-8",children:[c.jsxs("div",{className:"bg-blue-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-blue-600 mb-2",children:"7"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Pages Completed"})]}),c.jsxs("div",{className:"bg-green-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-green-600 mb-2",children:"6"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Concepts Mastered"})]}),c.jsxs("div",{className:"bg-purple-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-purple-600 mb-2",children:"100%"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Guide Progress"})]})]}),c.jsxs("div",{className:"space-y-4",children:[c.jsx("p",{className:"text-gray-700 font-medium",children:"Ready to start building with React Router?"}),c.jsxs("div",{className:"flex flex-col sm:flex-row gap-4 justify-center",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto sm:mx-0",children:[c.jsx("span",{children:"🔄"})," Review Guide"]})}),c.jsxs("a",{href:"https://reactrouter.com",target:"_blank",rel:"noopener noreferrer",className:"px-8 py-4 bg-white border-2 border-purple-500 text-purple-600 rounded-full hover:bg-purple-50 transition-all duration-300 flex items-center gap-2 mx-auto sm:mx-0",children:[c.jsx("span",{children:"📚"})," Official Docs"]})]})]}),c.jsxs("div",{className:"mt-8 pt-8 border-t border-gray-200",children:[c.jsx("p",{className:"text-sm text-gray-500 mb-3",children:"Want to test your 404 page?"}),c.jsx("a",{href:"/this-route-does-not-exist",className:"text-purple-600 hover:text-purple-700 text-sm underline",children:"Click here to visit a non-existent route"})]})]}),c.jsx("div",{className:"text-center mt-8",children:c.jsx("p",{className:"text-gray-600 text-sm",children:"Built with React Router"})})]}),c.jsx("style",{children:`
+                  function NotFoundPage() {
+                    return (
+                      <div>
+                        <h1>404 - Page Not Found</h1>
+                        <Link to="/">Go Home</Link>
+                      </div>
+                    );
+                  }`}),c.jsxs("div",{className:"bg-yellow-50 rounded-lg p-4 mt-4",children:[c.jsxs("p",{className:"text-sm text-gray-700 mb-3",children:[c.jsx("strong",{children:"Pro tip:"})," Put the wildcard route (*) last in your route list. It acts as a catch-all for any unmatched URLs!"]}),c.jsx("a",{href:"/this-does-not-exist",className:"text-blue-600 hover:underline text-sm",children:"Try visiting a non-existent page →"})]})]}),c.jsxs("div",{className:"flex justify-between items-center mt-12 gap-4",children:[c.jsx(et,{to:"/what-is-router",children:c.jsxs("button",{className:"px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all duration-200 flex items-center gap-2",children:[c.jsx("span",{children:"←"})," Previous"]})}),c.jsx(et,{to:"/example",children:c.jsxs("button",{className:"px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2",children:["See Live Example ",c.jsx("span",{children:"→"})]})})]})]})]})},np=()=>{const[i,r]=D.useState(!1);return D.useEffect(()=>{r(!0)},[]),c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-violet-50 via-purple-50 to-fuchsia-50 flex items-center justify-center p-6 relative overflow-hidden",children:[c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-1000",style:{width:"100%"}})}),i&&c.jsx("div",{className:"absolute inset-0 pointer-events-none",children:[...Array(30)].map((o,s)=>c.jsx("div",{className:"absolute animate-float",style:{left:`${Math.random()*100}%`,top:"-20px",animationDelay:`${Math.random()*2}s`,animationDuration:`${3+Math.random()*2}s`},children:c.jsx("span",{className:"text-2xl",children:["🎉","🎊","⭐","✨","🚀","💫"][Math.floor(Math.random()*6)]})},s))}),c.jsxs("div",{className:"max-w-3xl w-full relative z-10",children:[c.jsx("div",{className:"text-center mb-8",children:c.jsxs("div",{className:"inline-block relative",children:[c.jsx("div",{className:"absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse blur-xl opacity-50"}),c.jsx("div",{className:"relative bg-white p-8 rounded-full shadow-2xl",children:c.jsx("span",{className:"text-7xl",children:"🏆"})})]})}),c.jsxs("div",{className:"bg-white bg-opacity-90 backdrop-blur rounded-3xl shadow-2xl p-10 text-center",children:[c.jsx("h1",{className:"text-5xl font-bold text-gray-800 mb-4",children:"Congratulations!"}),c.jsx("p",{className:"text-2xl text-gray-600 mb-8",children:"You've completed the React Router guide"}),c.jsx("div",{className:"bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-6 mb-8",children:c.jsx("p",{className:"text-lg text-gray-700 leading-relaxed",children:"You've learned how to navigate between pages, create dynamic routes, handle URL parameters, and manage 404 errors. These are essential skills for building modern React applications!"})}),c.jsxs("div",{className:"grid md:grid-cols-3 gap-4 mb-8",children:[c.jsxs("div",{className:"bg-blue-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-blue-600 mb-2",children:"7"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Pages Completed"})]}),c.jsxs("div",{className:"bg-green-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-green-600 mb-2",children:"6"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Concepts Mastered"})]}),c.jsxs("div",{className:"bg-purple-50 rounded-xl p-6",children:[c.jsx("div",{className:"text-4xl font-bold text-purple-600 mb-2",children:"100%"}),c.jsx("div",{className:"text-sm text-gray-600",children:"Guide Progress"})]})]}),c.jsxs("div",{className:"space-y-4",children:[c.jsx("p",{className:"text-gray-700 font-medium",children:"Ready to start building with React Router?"}),c.jsxs("div",{className:"flex flex-col sm:flex-row gap-4 justify-center",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2 mx-auto sm:mx-0",children:[c.jsx("span",{children:"🔄"})," Review Guide"]})}),c.jsxs("a",{href:"https://reactrouter.com",target:"_blank",rel:"noopener noreferrer",className:"px-8 py-4 bg-white border-2 border-purple-500 text-purple-600 rounded-full hover:bg-purple-50 transition-all duration-300 flex items-center gap-2 mx-auto sm:mx-0",children:[c.jsx("span",{children:"📚"})," Official Docs"]})]})]}),c.jsxs("div",{className:"mt-8 pt-8 border-t border-gray-200",children:[c.jsx("p",{className:"text-sm text-gray-500 mb-3",children:"Want to test your 404 page?"}),c.jsx("a",{href:"/this-route-does-not-exist",className:"text-purple-600 hover:text-purple-700 text-sm underline",children:"Click here to visit a non-existent route"})]})]}),c.jsx("div",{className:"text-center mt-8",children:c.jsx("p",{className:"text-gray-600 text-sm",children:"Built with React Router"})})]}),c.jsx("style",{children:`
                 @keyframes float {
                     0% {
                         transform: translateY(-20px) rotate(0deg);
@@ -179,139 +179,139 @@ function NotFoundPage() {
                     animation: float linear infinite;
                 }
             `})]})},Zs=({currentStep:i,totalSteps:r})=>{const o=i/r*100;return c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500 ease-out",style:{width:`${o}%`}})})},Am=({prevLink:i,nextLink:r,prevText:o="Previous",nextText:s="Next"})=>c.jsxs("div",{className:"flex justify-between items-center mt-12 gap-4",children:[i?c.jsx(et,{to:i,children:c.jsxs("button",{className:"px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all duration-200 flex items-center gap-2",children:[c.jsx("span",{children:"←"})," ",o]})}):c.jsx("div",{}),r&&c.jsx(et,{to:r,children:c.jsxs("button",{className:"px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2",children:[s," ",c.jsx("span",{children:"→"})]})})]}),sl=({code:i,language:r="jsx"})=>{const[o,s]=D.useState(!1),d=()=>{navigator.clipboard.writeText(i),s(!0),setTimeout(()=>s(!1),2e3)};return c.jsxs("div",{className:"relative my-6 rounded-lg overflow-hidden bg-gray-900 shadow-lg",children:[c.jsxs("div",{className:"flex justify-between items-center px-4 py-2 bg-gray-800 border-b border-gray-700",children:[c.jsx("span",{className:"text-xs text-gray-400 uppercase",children:r}),c.jsx("button",{onClick:d,className:"text-xs px-3 py-1 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors",children:o?"Copied!":"Copy"})]}),c.jsx("pre",{className:"p-4 overflow-x-auto",children:c.jsx("code",{className:"text-sm text-gray-100",children:i})})]})},ip=()=>{const[i,r]=D.useState(!1);return D.useEffect(()=>{r(!0)},[]),c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex items-center justify-center p-6",children:[c.jsx(Zs,{currentStep:1,totalSteps:7}),c.jsxs("div",{className:`max-w-2xl w-full transition-all duration-1000 ${i?"opacity-100 translate-y-0":"opacity-0 translate-y-10"}`,children:[c.jsxs("div",{className:"text-center mb-8",children:[c.jsx("div",{className:"inline-block p-4 bg-white rounded-full shadow-lg mb-6 animate-bounce",children:c.jsx("svg",{className:"w-16 h-16 text-blue-500",fill:"none",stroke:"currentColor",viewBox:"0 0 24 24",children:c.jsx("path",{strokeLinecap:"round",strokeLinejoin:"round",strokeWidth:2,d:"M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"})})}),c.jsx("h1",{className:"text-5xl font-bold text-gray-800 mb-4",children:"Welcome to React Router"}),c.jsx("p",{className:"text-xl text-gray-600 mb-8",children:"Learn routing in React by experiencing it firsthand!"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-8",children:[c.jsx("h2",{className:"text-2xl font-semibold text-gray-800 mb-4",children:"What You'll Learn"}),c.jsx("div",{className:"space-y-4",children:[{icon:"📚",title:"The Basics",desc:"Understanding what React Router is and why it matters"},{icon:"⚙️",title:"Installation",desc:"Setting up React Router in your project"},{icon:"🏗️",title:"Multiple Pages",desc:"Creating and organizing different routes"},{icon:"🧭",title:"Navigation",desc:"Using Link and useNavigate for movement"},{icon:"🚫",title:"404 Handling",desc:"Managing routes that don't exist"}].map((o,s)=>c.jsxs("div",{className:"flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors",style:{animationDelay:`${s*100}ms`},children:[c.jsx("span",{className:"text-3xl",children:o.icon}),c.jsxs("div",{children:[c.jsx("h3",{className:"font-semibold text-gray-800",children:o.title}),c.jsx("p",{className:"text-gray-600 text-sm",children:o.desc})]})]},s))})]}),c.jsx("div",{className:"text-center",children:c.jsx(et,{to:"/what-is-router",children:c.jsxs("button",{className:"px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 mx-auto",children:["Let's Get Started! ",c.jsx("span",{className:"text-2xl"})]})})}),c.jsx("p",{className:"text-center text-gray-500 text-sm mt-6",children:"This interactive guide uses React Router itself to teach you!"})]})]})},up=()=>{const[i,r]=D.useState("without");return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6 pt-12",children:[c.jsx(Zs,{currentStep:2,totalSteps:7}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"What is React Router?"}),c.jsx("p",{className:"text-xl text-gray-600",children:"Navigation for Single Page Applications"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-8",children:[c.jsxs("div",{className:"mb-6",children:[c.jsx("h2",{className:"text-2xl font-semibold text-gray-800 mb-4",children:"The Problem"}),c.jsx("p",{className:"text-gray-600 leading-relaxed",children:'React creates Single Page Applications (SPAs) - your entire app runs on one HTML page. But users expect multiple "pages" with different URLs. How do we create that experience?'})]}),c.jsxs("div",{className:"bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl p-6 mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-3",children:"🎯 The Solution: React Router"}),c.jsx("p",{className:"text-gray-700",children:"React Router lets you create different views at different URLs, all while staying in a single page app. It handles the browser's URL and shows the right components without page refreshes!"})]}),c.jsxs("div",{className:"mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-4",children:"See the Difference"}),c.jsxs("div",{className:"flex gap-2 mb-4",children:[c.jsx("button",{onClick:()=>r("without"),className:`px-6 py-2 rounded-lg transition-all ${i==="without"?"bg-blue-500 text-white":"bg-gray-200 text-gray-700"}`,children:"Without Router"}),c.jsx("button",{onClick:()=>r("with"),className:`px-6 py-2 rounded-lg transition-all ${i==="with"?"bg-purple-500 text-white":"bg-gray-200 text-gray-700"}`,children:"With Router"})]}),i==="without"?c.jsx(sl,{code:`function App() {
-  const [page, setPage] = useState('home');
+                            const [page, setPage] = useState('home');
   
-  return (
-    <div>
-      <button onClick={() => setPage('home')}>Home</button>
-      <button onClick={() => setPage('about')}>About</button>
+                            return (
+                                <div>
+                                <button onClick={() => setPage('home')}>Home</button>
+                                <button onClick={() => setPage('about')}>About</button>
       
-      {page === 'home' && <HomePage />}
-      {page === 'about' && <AboutPage />}
-    </div>
-  );
-}
+                                {page === 'home' && <HomePage />}
+                                {page === 'about' && <AboutPage />}
+                                </div>
+                            );
+                            }
 
-// ❌ Problems:
-// - URL doesn't change
-// - Can't bookmark pages
-// - Browser back button doesn't work
-// - Can't share specific pages`}):c.jsx(sl,{code:`function App() {
-  return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+                            // ❌ Problems:
+                            // - URL doesn't change
+                            // - Can't bookmark pages
+                            // - Browser back button doesn't work
+                            // - Can't share specific pages`}):c.jsx(sl,{code:`function App() {
+                            return (
+                                <BrowserRouter>
+                                <nav>
+                                    <Link to="/">Home</Link>
+                                    <Link to="/about">About</Link>
+                                </nav>
       
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+                                <Routes>
+                                    <Route path="/" element={<HomePage />} />
+                                    <Route path="/about" element={<AboutPage />} />
+                                </Routes>
+                                </BrowserRouter>
+                            );
+                            }
 
-// ✅ Benefits:
-// - URLs change (/, /about)
-// - Can bookmark any page
-// - Browser navigation works
-// - Shareable links!`})]})]}),c.jsx(Am,{prevLink:"/welcome",nextLink:"/how-to-use"})]})]})},rp=()=>{const[i,r]=D.useState(1);return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 p-6 pt-12",children:[c.jsx(Zs,{currentStep:3,totalSteps:7}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"How to Use React Router"}),c.jsx("p",{className:"text-xl text-gray-600",children:"A step-by-step guide"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"📦"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 1: Installation"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"First, install React Router in your project:"}),c.jsx(sl,{code:"npm install react-router-dom",language:"bash"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"⚙️"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 2: Setup Router"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create your router configuration in main.jsx:"}),c.jsx(sl,{code:`import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
+                            // ✅ Benefits:
+                            // - URLs change (/, /about)
+                            // - Can bookmark any page
+                            // - Browser navigation works
+                            // - Shareable links!`})]})]}),c.jsx(Am,{prevLink:"/welcome",nextLink:"/how-to-use"})]})]})},rp=()=>{const[i,r]=D.useState(1);return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-pink-50 to-purple-50 p-6 pt-12",children:[c.jsx(Zs,{currentStep:3,totalSteps:7}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"How to Use React Router"}),c.jsx("p",{className:"text-xl text-gray-600",children:"A step-by-step guide"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"📦"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 1: Installation"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"First, install React Router in your project:"}),c.jsx(sl,{code:"npm install react-router-dom",language:"bash"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"⚙️"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 2: Setup Router"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create your router configuration in main.jsx:"}),c.jsx(sl,{code:`import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+                            import HomePage from './HomePage';
+                            import AboutPage from './AboutPage';
 
-const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-]);
+                            const router = createBrowserRouter([
+                            { path: '/', element: <HomePage /> },
+                            { path: '/about', element: <AboutPage /> },
+                            ]);
 
-createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);`})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🔗"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 3: Navigate with Link"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Use the Link component for navigation (like an enhanced anchor tag):"}),c.jsx(sl,{code:`import { Link } from 'react-router-dom';
+                            createRoot(document.getElementById('root')).render(
+                            <RouterProvider router={router} />
+                            );`})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🔗"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 3: Navigate with Link"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Use the Link component for navigation (like an enhanced anchor tag):"}),c.jsx(sl,{code:`import { Link } from 'react-router-dom';
 
-function Navigation() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-  );
-}`}),c.jsx("div",{className:"bg-blue-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsxs("strong",{children:["Why Link instead of ","<a>","?"]})," Link prevents full page reloads, making navigation instant and smooth!"]})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🧭"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 4: useNavigate Hook"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Navigate programmatically after actions like form submissions:"}),c.jsx(sl,{code:`import { useNavigate } from 'react-router-dom';
+                            function Navigation() {
+                            return (
+                                <nav>
+                                <Link to="/">Home</Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/contact">Contact</Link>
+                                </nav>
+                            );
+                            }`}),c.jsx("div",{className:"bg-blue-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsxs("strong",{children:["Why Link instead of ","<a>","?"]})," Link prevents full page reloads, making navigation instant and smooth!"]})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🧭"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 4: useNavigate Hook"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Navigate programmatically after actions like form submissions:"}),c.jsx(sl,{code:`import { useNavigate } from 'react-router-dom';
 
-function LoginForm() {
-  const navigate = useNavigate();
+                            function LoginForm() {
+                            const navigate = useNavigate();
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ... login logic
-    navigate('/dashboard'); // Redirect after login
-  };
+                            const handleSubmit = (e) => {
+                                e.preventDefault();
+                                // ... login logic
+                                navigate('/dashboard'); // Redirect after login
+                            };
   
-  return <form onSubmit={handleSubmit}>...</form>;
-}`}),c.jsx("div",{className:"mt-4",children:c.jsx("button",{onClick:()=>{alert("This would navigate programmatically!")},className:"px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors",children:"Try useNavigate Example"})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🎯"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 5: Dynamic Routes"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create routes with parameters using useParams:"}),c.jsx(sl,{code:`// In your router config:
-{ path: '/user/:id', element: <UserProfile /> }
+                            return <form onSubmit={handleSubmit}>...</form>;
+                            }`}),c.jsx("div",{className:"mt-4",children:c.jsx("button",{onClick:()=>{alert("This would navigate programmatically!")},className:"px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors",children:"Try useNavigate Example"})})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🎯"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 5: Dynamic Routes"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Create routes with parameters using useParams:"}),c.jsx(sl,{code:`// In your router config:
+                            { path: '/user/:id', element: <UserProfile /> }
 
-// In your component:
-import { useParams } from 'react-router-dom';
+                            // In your component:
+                            import { useParams } from 'react-router-dom';
 
-function UserProfile() {
-  const { id } = useParams();
+                            function UserProfile() {
+                            const { id } = useParams();
   
-  return <h1>User Profile: {id}</h1>;
-}
+                            return <h1>User Profile: {id}</h1>;
+                            }
 
-// Links:
-<Link to="/user/123">User 123</Link>
-<Link to="/user/456">User 456</Link>`}),c.jsx("p",{className:"text-gray-600 mt-4",children:"Ready to see this in action? Let's check out a real example with data fetching!"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🚫"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 6: Handle 404 Errors"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Catch all unmatched routes with a wildcard:"}),c.jsx(sl,{code:`const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-  { path: '*', element: <NotFoundPage /> }, // Catches everything else
-]);
+                            // Links:
+                            <Link to="/user/123">User 123</Link>
+                            <Link to="/user/456">User 456</Link>`}),c.jsx("p",{className:"text-gray-600 mt-4",children:"Ready to see this in action? Let's check out a real example with data fetching!"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-6",children:[c.jsxs("div",{className:"flex items-center gap-3 mb-4",children:[c.jsx("span",{className:"text-3xl",children:"🚫"}),c.jsx("h2",{className:"text-2xl font-semibold text-gray-800",children:"Step 6: Handle 404 Errors"})]}),c.jsx("p",{className:"text-gray-600 mb-4",children:"Catch all unmatched routes with a wildcard:"}),c.jsx(sl,{code:`const router = createBrowserRouter([
+                            { path: '/', element: <HomePage /> },
+                            { path: '/about', element: <AboutPage /> },
+                            { path: '*', element: <NotFoundPage /> }, // Catches everything else
+                            ]);
 
-function NotFoundPage() {
-  return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <Link to="/">Go Home</Link>
-    </div>
-  );
-}`}),c.jsx("div",{className:"bg-yellow-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsx("strong",{children:"Pro tip:"})," Put the wildcard route (*) last in your route list. It acts as a catch-all for any unmatched URLs!"]})})]}),c.jsx(Am,{prevLink:"/what-is-router",nextLink:"/example"})]})]})};function cp(){const[i,r]=D.useState("welcome"),o={welcome:c.jsx(ip,{}),"what-is-router":c.jsx(up,{}),"how-to-use":c.jsx(rp,{})};return c.jsxs("div",{children:[c.jsx("div",{className:"fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg p-2",children:c.jsxs("select",{value:i,onChange:s=>r(s.target.value),className:"px-3 py-2 rounded border",children:[c.jsx("option",{value:"welcome",children:"Welcome"}),c.jsx("option",{value:"what-is-router",children:"What Is Router"}),c.jsx("option",{value:"how-to-use",children:"How To Use"})]})}),o[i]]})}const am=({code:i,language:r="jsx"})=>{const[o,s]=D.useState(!1),d=()=>{navigator.clipboard.writeText(i),s(!0),setTimeout(()=>s(!1),2e3)};return c.jsxs("div",{className:"relative my-6 rounded-lg overflow-hidden bg-gray-900 shadow-lg",children:[c.jsxs("div",{className:"flex justify-between items-center px-4 py-2 bg-gray-800 border-b border-gray-700",children:[c.jsx("span",{className:"text-xs text-gray-400 uppercase tracking-wide",children:r}),c.jsx("button",{onClick:d,className:"text-xs px-3 py-1 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors duration-200",children:o?"✓ Copied!":"Copy"})]}),c.jsx("pre",{className:"p-4 overflow-x-auto",children:c.jsx("code",{className:"text-sm text-gray-100 font-mono",children:i})})]})},sp=()=>{const[i,r]=D.useState("without");return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6 pt-12",children:[c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500",style:{width:"28%"}})}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"What is React Router?"}),c.jsx("p",{className:"text-xl text-gray-600",children:"Navigation for Single Page Applications"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-8",children:[c.jsxs("div",{className:"mb-6",children:[c.jsx("h2",{className:"text-2xl font-semibold text-gray-800 mb-4",children:"The Problem"}),c.jsx("p",{className:"text-gray-600 leading-relaxed",children:'React creates Single Page Applications (SPAs) - your entire app runs on one HTML page. But users expect multiple "pages" with different URLs. How do we create that experience?'})]}),c.jsxs("div",{className:"bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl p-6 mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-3",children:"🎯 The Solution: React Router"}),c.jsx("p",{className:"text-gray-700",children:"React Router lets you create different views at different URLs, all while staying in a single page app. It handles the browser's URL and shows the right components without page refreshes!"})]}),c.jsxs("div",{className:"mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-4",children:"See the Difference"}),c.jsxs("div",{className:"flex gap-2 mb-4",children:[c.jsx("button",{onClick:()=>r("without"),className:`px-6 py-2 rounded-lg transition-all duration-200 ${i==="without"?"bg-blue-500 text-white shadow-md":"bg-gray-200 text-gray-700 hover:bg-gray-300"}`,children:"Without Router"}),c.jsx("button",{onClick:()=>r("with"),className:`px-6 py-2 rounded-lg transition-all duration-200 ${i==="with"?"bg-purple-500 text-white shadow-md":"bg-gray-200 text-gray-700 hover:bg-gray-300"}`,children:"With Router"})]}),c.jsx("div",{className:"transition-all duration-300",children:i==="without"?c.jsx(am,{code:`function App() {
-  const [page, setPage] = useState('home');
+                            function NotFoundPage() {
+                            return (
+                                <div>
+                                <h1>404 - Page Not Found</h1>
+                                <Link to="/">Go Home</Link>
+                                </div>
+                            );
+                            }`}),c.jsx("div",{className:"bg-yellow-50 rounded-lg p-4 mt-4",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsx("strong",{children:"Pro tip:"})," Put the wildcard route (*) last in your route list. It acts as a catch-all for any unmatched URLs!"]})})]}),c.jsx(Am,{prevLink:"/what-is-router",nextLink:"/example"})]})]})};function cp(){const[i,r]=D.useState("welcome"),o={welcome:c.jsx(ip,{}),"what-is-router":c.jsx(up,{}),"how-to-use":c.jsx(rp,{})};return c.jsxs("div",{children:[c.jsx("div",{className:"fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg p-2",children:c.jsxs("select",{value:i,onChange:s=>r(s.target.value),className:"px-3 py-2 rounded border",children:[c.jsx("option",{value:"welcome",children:"Welcome"}),c.jsx("option",{value:"what-is-router",children:"What Is Router"}),c.jsx("option",{value:"how-to-use",children:"How To Use"})]})}),o[i]]})}const am=({code:i,language:r="jsx"})=>{const[o,s]=D.useState(!1),d=()=>{navigator.clipboard.writeText(i),s(!0),setTimeout(()=>s(!1),2e3)};return c.jsxs("div",{className:"relative my-6 rounded-lg overflow-hidden bg-gray-900 shadow-lg",children:[c.jsxs("div",{className:"flex justify-between items-center px-4 py-2 bg-gray-800 border-b border-gray-700",children:[c.jsx("span",{className:"text-xs text-gray-400 uppercase tracking-wide",children:r}),c.jsx("button",{onClick:d,className:"text-xs px-3 py-1 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 transition-colors duration-200",children:o?"✓ Copied!":"Copy"})]}),c.jsx("pre",{className:"p-4 overflow-x-auto",children:c.jsx("code",{className:"text-sm text-gray-100 font-mono",children:i})})]})},sp=()=>{const[i,r]=D.useState("without");return c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6 pt-12",children:[c.jsx("div",{className:"fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50",children:c.jsx("div",{className:"h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500",style:{width:"28%"}})}),c.jsxs("div",{className:"max-w-4xl mx-auto",children:[c.jsxs("div",{className:"text-center mb-12",children:[c.jsx("h1",{className:"text-4xl font-bold text-gray-800 mb-4",children:"What is React Router?"}),c.jsx("p",{className:"text-xl text-gray-600",children:"Navigation for Single Page Applications"})]}),c.jsxs("div",{className:"bg-white rounded-2xl shadow-xl p-8 mb-8",children:[c.jsxs("div",{className:"mb-6",children:[c.jsx("h2",{className:"text-2xl font-semibold text-gray-800 mb-4",children:"The Problem"}),c.jsx("p",{className:"text-gray-600 leading-relaxed",children:'React creates Single Page Applications (SPAs) - your entire app runs on one HTML page. But users expect multiple "pages" with different URLs. How do we create that experience?'})]}),c.jsxs("div",{className:"bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl p-6 mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-3",children:"🎯 The Solution: React Router"}),c.jsx("p",{className:"text-gray-700",children:"React Router lets you create different views at different URLs, all while staying in a single page app. It handles the browser's URL and shows the right components without page refreshes!"})]}),c.jsxs("div",{className:"mb-6",children:[c.jsx("h3",{className:"text-xl font-semibold text-gray-800 mb-4",children:"See the Difference"}),c.jsxs("div",{className:"flex gap-2 mb-4",children:[c.jsx("button",{onClick:()=>r("without"),className:`px-6 py-2 rounded-lg transition-all duration-200 ${i==="without"?"bg-blue-500 text-white shadow-md":"bg-gray-200 text-gray-700 hover:bg-gray-300"}`,children:"Without Router"}),c.jsx("button",{onClick:()=>r("with"),className:`px-6 py-2 rounded-lg transition-all duration-200 ${i==="with"?"bg-purple-500 text-white shadow-md":"bg-gray-200 text-gray-700 hover:bg-gray-300"}`,children:"With Router"})]}),c.jsx("div",{className:"transition-all duration-300",children:i==="without"?c.jsx(am,{code:`function App() {
+                    const [page, setPage] = useState('home');
   
-  return (
-    <div>
-      <button onClick={() => setPage('home')}>Home</button>
-      <button onClick={() => setPage('about')}>About</button>
+                    return (
+                      <div>
+                        <button onClick={() => setPage('home')}>Home</button>
+                        <button onClick={() => setPage('about')}>About</button>
       
-      {page === 'home' && <HomePage />}
-      {page === 'about' && <AboutPage />}
-    </div>
-  );
-}
+                        {page === 'home' && <HomePage />}
+                        {page === 'about' && <AboutPage />}
+                      </div>
+                    );
+                  }
 
-// ❌ Problems:
-// - URL doesn't change
-// - Can't bookmark pages
-// - Browser back button doesn't work
-// - Can't share specific pages`}):c.jsx(am,{code:`function App() {
-  return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+                  // ❌ Problems:
+                  // - URL doesn't change
+                  // - Can't bookmark pages
+                  // - Browser back button doesn't work
+                  // - Can't share specific pages`}):c.jsx(am,{code:`function App() {
+                    return (
+                      <BrowserRouter>
+                        <nav>
+                          <Link to="/">Home</Link>
+                          <Link to="/about">About</Link>
+                        </nav>
       
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+                        <Routes>
+                          <Route path="/" element={<HomePage />} />
+                          <Route path="/about" element={<AboutPage />} />
+                        </Routes>
+                      </BrowserRouter>
+                    );
+                  }
 
-// ✅ Benefits:
-// - URLs change (/, /about)
-// - Can bookmark any page
-// - Browser navigation works
-// - Shareable links!`})})]}),c.jsx("div",{className:"bg-green-50 border-l-4 border-green-500 p-4 rounded",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsx("strong",{className:"text-green-700",children:"💡 Did you notice?"})," This page you're on right now has the URL",c.jsx("code",{className:"bg-green-100 px-2 py-1 rounded mx-1 text-green-800",children:"/what-is-router"}),"- that's React Router in action!"]})})]}),c.jsxs("div",{className:"flex justify-between items-center mt-12 gap-4",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all duration-200 flex items-center gap-2",children:[c.jsx("span",{children:"←"})," Previous"]})}),c.jsx(et,{to:"/how-to-use",children:c.jsxs("button",{className:"px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2",children:["Next ",c.jsx("span",{children:"→"})]})})]})]})]})},op=()=>{const[i,r]=D.useState(0);return D.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%360)},50);return()=>clearInterval(o)},[]),c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 flex items-center justify-center p-6 relative overflow-hidden",children:[c.jsxs("div",{className:"absolute inset-0 opacity-10",children:[c.jsx("div",{className:"absolute top-1/4 left-1/4 w-64 h-64 bg-red-400 rounded-full blur-3xl",style:{transform:`rotate(${i}deg) translateX(50px)`}}),c.jsx("div",{className:"absolute bottom-1/4 right-1/4 w-64 h-64 bg-orange-400 rounded-full blur-3xl",style:{transform:`rotate(${-i}deg) translateX(-50px)`}})]}),c.jsxs("div",{className:"max-w-2xl w-full relative z-10",children:[c.jsx("div",{className:"text-center mb-8",children:c.jsxs("div",{className:"relative inline-block",children:[c.jsx("h1",{className:"text-9xl font-bold text-gray-800 mb-4 animate-pulse",children:"404"}),c.jsx("div",{className:"absolute -top-8 -right-8 text-6xl animate-bounce",children:"🔍"})]})}),c.jsxs("div",{className:"bg-white bg-opacity-90 backdrop-blur rounded-2xl shadow-2xl p-8 text-center",children:[c.jsx("h2",{className:"text-3xl font-bold text-gray-800 mb-4",children:"Oops! Page Not Found"}),c.jsx("p",{className:"text-xl text-gray-600 mb-6",children:"Looks like this route doesn't exist in our React Router configuration"}),c.jsxs("div",{className:"bg-gradient-to-r from-orange-100 to-red-100 rounded-xl p-6 mb-8",children:[c.jsx("h3",{className:"font-semibold text-gray-800 mb-3",children:"🎓 This is the 404 handler in action!"}),c.jsxs("p",{className:"text-sm text-gray-700 text-left mb-4",children:["In ",c.jsx("code",{className:"bg-orange-200 px-2 py-1 rounded",children:"main.jsx"}),", we set up a wildcard route:"]}),c.jsx("div",{className:"bg-gray-900 rounded-lg p-4 text-left",children:c.jsxs("code",{className:"text-sm text-gray-100 font-mono",children:["{"," path: '*', element: ","<NotFoundPage />"," ","}"]})}),c.jsx("p",{className:"text-xs text-gray-600 text-left mt-3",children:"The asterisk (*) catches all unmatched routes and displays this page!"})]}),c.jsxs("div",{className:"mb-8",children:[c.jsx("p",{className:"text-gray-700 font-medium mb-4",children:"Here are some places you can go:"}),c.jsxs("div",{className:"grid sm:grid-cols-2 gap-3",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("div",{className:"bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-purple-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🏠"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Welcome Page"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Start from the beginning"})]})}),c.jsx(et,{to:"/example",children:c.jsxs("div",{className:"bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-teal-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🎯"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Live Example"}),c.jsx("div",{className:"text-xs text-gray-600",children:"See routing in action"})]})}),c.jsx(et,{to:"/conclusion",children:c.jsxs("div",{className:"bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-pink-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"📚"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Conclusion"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Review what you learned"})]})}),c.jsx(et,{to:"/outro",children:c.jsxs("div",{className:"bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-orange-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🏆"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Outro"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Complete the guide"})]})})]})]}),c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-3",children:[c.jsx("span",{children:"←"})," Back to Safety"]})})]}),c.jsx("div",{className:"text-center mt-8",children:c.jsxs("p",{className:"text-sm text-gray-600",children:["💡 ",c.jsx("strong",{children:"Fun Fact:"})," HTTP 404 errors were named after room 404 at CERN where the web was born!"]})})]})]})};function fp(){const i=qs();return D.useEffect(()=>{i("/welcome")},[i]),c.jsx("div",{className:"min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center",children:c.jsxs("div",{className:"text-center",children:[c.jsx("div",{className:"animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-500 mx-auto"}),c.jsx("p",{className:"mt-4 text-gray-600",children:"Loading..."})]})})}const dp=qy([{path:"/",element:c.jsx(fp,{})},{path:"/welcome",element:c.jsx(cp,{})},{path:"/what-is-router",element:c.jsx(sp,{})},{path:"/how-to-use",element:c.jsx(lp,{})},{path:"/example",element:c.jsx(tp,{})},{path:"/example/:id",element:c.jsx(ap,{})},{path:"/conclusion",element:c.jsx(ep,{})},{path:"/outro",element:c.jsx(np,{})},{path:"*",element:c.jsx(op,{})}],{basename:"/react-router-tutorial-sebastian-koster"});Xg.createRoot(document.getElementById("root")).render(c.jsx(D.StrictMode,{children:c.jsx(Iy,{router:dp})}));
+                  // ✅ Benefits:
+                  // - URLs change (/, /about)
+                  // - Can bookmark any page
+                  // - Browser navigation works
+                  // - Shareable links!`})})]}),c.jsx("div",{className:"bg-green-50 border-l-4 border-green-500 p-4 rounded",children:c.jsxs("p",{className:"text-sm text-gray-700",children:[c.jsx("strong",{className:"text-green-700",children:"💡 Did you notice?"})," This page you're on right now has the URL",c.jsx("code",{className:"bg-green-100 px-2 py-1 rounded mx-1 text-green-800",children:"/what-is-router"}),"- that's React Router in action!"]})})]}),c.jsxs("div",{className:"flex justify-between items-center mt-12 gap-4",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-6 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-all duration-200 flex items-center gap-2",children:[c.jsx("span",{children:"←"})," Previous"]})}),c.jsx(et,{to:"/how-to-use",children:c.jsxs("button",{className:"px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2",children:["Next ",c.jsx("span",{children:"→"})]})})]})]})]})},op=()=>{const[i,r]=D.useState(0);return D.useEffect(()=>{const o=setInterval(()=>{r(s=>(s+1)%360)},50);return()=>clearInterval(o)},[]),c.jsxs("div",{className:"min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 flex items-center justify-center p-6 relative overflow-hidden",children:[c.jsxs("div",{className:"absolute inset-0 opacity-10",children:[c.jsx("div",{className:"absolute top-1/4 left-1/4 w-64 h-64 bg-red-400 rounded-full blur-3xl",style:{transform:`rotate(${i}deg) translateX(50px)`}}),c.jsx("div",{className:"absolute bottom-1/4 right-1/4 w-64 h-64 bg-orange-400 rounded-full blur-3xl",style:{transform:`rotate(${-i}deg) translateX(-50px)`}})]}),c.jsxs("div",{className:"max-w-2xl w-full relative z-10",children:[c.jsx("div",{className:"text-center mb-8",children:c.jsxs("div",{className:"relative inline-block",children:[c.jsx("h1",{className:"text-9xl font-bold text-gray-800 mb-4 animate-pulse",children:"404"}),c.jsx("div",{className:"absolute -top-8 -right-8 text-6xl animate-bounce",children:"🔍"})]})}),c.jsxs("div",{className:"bg-white bg-opacity-90 backdrop-blur rounded-2xl shadow-2xl p-8 text-center",children:[c.jsx("h2",{className:"text-3xl font-bold text-gray-800 mb-4",children:"Oops! Page Not Found"}),c.jsx("p",{className:"text-xl text-gray-600 mb-6",children:"Looks like this route doesn't exist in our React Router configuration"}),c.jsxs("div",{className:"bg-gradient-to-r from-orange-100 to-red-100 rounded-xl p-6 mb-8",children:[c.jsx("h3",{className:"font-semibold text-gray-800 mb-3",children:"🎓 This is the 404 handler in action!"}),c.jsxs("p",{className:"text-sm text-gray-700 text-left mb-4",children:["In ",c.jsx("code",{className:"bg-orange-200 px-2 py-1 rounded",children:"main.jsx"}),", we set up a wildcard route:"]}),c.jsx("div",{className:"bg-gray-900 rounded-lg p-4 text-left",children:c.jsxs("code",{className:"text-sm text-gray-100 font-mono",children:["{"," path: '*', element: ","<NotFoundPage />"," ","}"]})}),c.jsx("p",{className:"text-xs text-gray-600 text-left mt-3",children:"The asterisk (*) catches all unmatched routes and displays this page!"})]}),c.jsxs("div",{className:"mb-8",children:[c.jsx("p",{className:"text-gray-700 font-medium mb-4",children:"Here are some places you can go:"}),c.jsxs("div",{className:"grid sm:grid-cols-2 gap-3",children:[c.jsx(et,{to:"/welcome",children:c.jsxs("div",{className:"bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-purple-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🏠"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Welcome Page"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Start from the beginning"})]})}),c.jsx(et,{to:"/example",children:c.jsxs("div",{className:"bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-teal-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🎯"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Live Example"}),c.jsx("div",{className:"text-xs text-gray-600",children:"See routing in action"})]})}),c.jsx(et,{to:"/conclusion",children:c.jsxs("div",{className:"bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-pink-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"📚"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Conclusion"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Review what you learned"})]})}),c.jsx(et,{to:"/outro",children:c.jsxs("div",{className:"bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg hover:shadow-lg transition-all duration-200 border-2 border-transparent hover:border-orange-300",children:[c.jsx("div",{className:"text-2xl mb-2",children:"🏆"}),c.jsx("div",{className:"font-semibold text-gray-800",children:"Outro"}),c.jsx("div",{className:"text-xs text-gray-600",children:"Complete the guide"})]})})]})]}),c.jsx(et,{to:"/welcome",children:c.jsxs("button",{className:"px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-3",children:[c.jsx("span",{children:"←"})," Back to Safety"]})})]}),c.jsx("div",{className:"text-center mt-8",children:c.jsxs("p",{className:"text-sm text-gray-600",children:["💡 ",c.jsx("strong",{children:"Fun Fact:"})," HTTP 404 errors were named after room 404 at CERN where the web was born!"]})})]})]})};function fp(){const i=qs();return D.useEffect(()=>{i("/welcome")},[i]),c.jsx("div",{className:"min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center",children:c.jsxs("div",{className:"text-center",children:[c.jsx("div",{className:"animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-500 mx-auto"}),c.jsx("p",{className:"mt-4 text-gray-600",children:"Loading..."})]})})}const dp=qy([{path:"/",element:c.jsx(fp,{})},{path:"/welcome",element:c.jsx(cp,{})},{path:"/what-is-router",element:c.jsx(sp,{})},{path:"/how-to-use",element:c.jsx(lp,{})},{path:"/example",element:c.jsx(tp,{})},{path:"/example/:id",element:c.jsx(ap,{})},{path:"/conclusion",element:c.jsx(ep,{})},{path:"/outro",element:c.jsx(np,{})},{path:"*",element:c.jsx(op,{})}],{basename:"/react-router-tutorial-sebastian-koster"});Xg.createRoot(document.getElementById("root")).render(c.jsx(D.StrictMode,{children:c.jsx(Iy,{router:dp})}));
