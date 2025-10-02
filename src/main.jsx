@@ -24,7 +24,9 @@ const router = createBrowserRouter([
   {path: '/conclusion', element: <ConclusionPage />},
   {path: '/outro', element: <Outro />},
   {path: '*', element: <NotFoundPage />},
-]);
+], {
+  basename: "/react-router-tutorial-sebastian-koster"
+});
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
