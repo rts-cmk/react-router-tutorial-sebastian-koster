@@ -53,7 +53,7 @@ const { id } = useParams();`;
             </div>
 
             <div className="max-w-4xl mx-auto">
-                {/* Header */}
+                
                 <div className="text-center mb-12">
                     <div className="inline-block p-4 bg-white rounded-full shadow-lg mb-6">
                         <span className="text-5xl">🎉</span>
@@ -64,7 +64,7 @@ const { id } = useParams();`;
                     </p>
                 </div>
 
-                {/* What You Learned */}
+                
                 <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
                     <h2 className="text-2xl font-semibold text-gray-800 mb-6">What You've Learned</h2>
                     
