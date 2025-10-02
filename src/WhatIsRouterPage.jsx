@@ -93,46 +93,46 @@ const WhatIsRouterPage = () => {
             <div className="transition-all duration-300">
               {activeTab === 'without' ? (
                 <CodeBlock code={`function App() {
-  const [page, setPage] = useState('home');
+                    const [page, setPage] = useState('home');
   
-  return (
-    <div>
-      <button onClick={() => setPage('home')}>Home</button>
-      <button onClick={() => setPage('about')}>About</button>
+                    return (
+                      <div>
+                        <button onClick={() => setPage('home')}>Home</button>
+                        <button onClick={() => setPage('about')}>About</button>
       
-      {page === 'home' && <HomePage />}
-      {page === 'about' && <AboutPage />}
-    </div>
-  );
-}
+                        {page === 'home' && <HomePage />}
+                        {page === 'about' && <AboutPage />}
+                      </div>
+                    );
+                  }
 
-// ❌ Problems:
-// - URL doesn't change
-// - Can't bookmark pages
-// - Browser back button doesn't work
-// - Can't share specific pages`} />
+                  // ❌ Problems:
+                  // - URL doesn't change
+                  // - Can't bookmark pages
+                  // - Browser back button doesn't work
+                  // - Can't share specific pages`} />
               ) : (
                 <CodeBlock code={`function App() {
-  return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+                    return (
+                      <BrowserRouter>
+                        <nav>
+                          <Link to="/">Home</Link>
+                          <Link to="/about">About</Link>
+                        </nav>
       
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+                        <Routes>
+                          <Route path="/" element={<HomePage />} />
+                          <Route path="/about" element={<AboutPage />} />
+                        </Routes>
+                      </BrowserRouter>
+                    );
+                  }
 
-// ✅ Benefits:
-// - URLs change (/, /about)
-// - Can bookmark any page
-// - Browser navigation works
-// - Shareable links!`} />
+                  // ✅ Benefits:
+                  // - URLs change (/, /about)
+                  // - Can bookmark any page
+                  // - Browser navigation works
+                  // - Shareable links!`} />
               )}
             </div>
           </div>

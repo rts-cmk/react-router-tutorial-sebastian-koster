@@ -82,17 +82,17 @@ const HowToUsePage = () => {
           <p className="text-gray-600 mb-4">Create your router configuration in main.jsx:</p>
           
           <CodeBlock code={`import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
+                  import HomePage from './HomePage';
+                  import AboutPage from './AboutPage';
 
-const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-]);
+                  const router = createBrowserRouter([
+                    { path: '/', element: <HomePage /> },
+                    { path: '/about', element: <AboutPage /> },
+                  ]);
 
-createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);`} />
+                  createRoot(document.getElementById('root')).render(
+                    <RouterProvider router={router} />
+                  );`} />
 
           <div className="mt-4 p-4 bg-purple-50 rounded-lg">
             <h4 className="font-semibold text-gray-800 mb-2">Key Parts Explained:</h4>
@@ -115,15 +115,15 @@ createRoot(document.getElementById('root')).render(
           
           <CodeBlock code={`import { Link } from 'react-router-dom';
 
-function Navigation() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-  );
-}`} />
+                  function Navigation() {
+                    return (
+                      <nav>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About</Link>
+                        <Link to="/contact">Contact</Link>
+                      </nav>
+                    );
+                  }`} />
 
           <div className="bg-blue-50 rounded-lg p-4 mt-4">
             <p className="text-sm text-gray-700 mb-3">
@@ -150,22 +150,22 @@ function Navigation() {
           
           <CodeBlock code={`import { useNavigate } from 'react-router-dom';
 
-function LoginForm() {
-  const navigate = useNavigate();
+                  function LoginForm() {
+                    const navigate = useNavigate();
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ... login logic
-    navigate('/dashboard'); // Redirect after login
-  };
+                    const handleSubmit = (e) => {
+                      e.preventDefault();
+                      // ... login logic
+                      navigate('/dashboard'); // Redirect after login
+                    };
   
-  return (
-    <form onSubmit={handleSubmit}>
-      {/* form fields */}
-      <button type="submit">Login</button>
-    </form>
-  );
-}`} />
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        {/* form fields */}
+                        <button type="submit">Login</button>
+                      </form>
+                    );
+                  }`} />
 
           <div className="mt-4 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-4">
             <p className="text-sm text-gray-700 mb-3">
@@ -196,20 +196,20 @@ function LoginForm() {
           <p className="text-gray-600 mb-4">Create routes with parameters using useParams:</p>
           
           <CodeBlock code={`// In your router config:
-{ path: '/user/:id', element: <UserProfile /> }
+                  { path: '/user/:id', element: <UserProfile /> }
 
-// In your component:
-import { useParams } from 'react-router-dom';
+                  // In your component:
+                  import { useParams } from 'react-router-dom';
 
-function UserProfile() {
-  const { id } = useParams();
+                  function UserProfile() {
+                    const { id } = useParams();
   
-  return <h1>User Profile: {id}</h1>;
-}
+                    return <h1>User Profile: {id}</h1>;
+                  }
 
-// Links:
-<Link to="/user/123">User 123</Link>
-<Link to="/user/456">User 456</Link>`} />
+                  // Links:
+                  <Link to="/user/123">User 123</Link>
+                  <Link to="/user/456">User 456</Link>`} />
 
           <div className="bg-green-50 rounded-lg p-4 mt-4">
             <p className="text-sm text-gray-700 mb-2">
@@ -228,19 +228,19 @@ function UserProfile() {
           <p className="text-gray-600 mb-4">Catch all unmatched routes with a wildcard:</p>
           
           <CodeBlock code={`const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-  { path: '*', element: <NotFoundPage /> }, // Catches everything else
-]);
+                    { path: '/', element: <HomePage /> },
+                    { path: '/about', element: <AboutPage /> },
+                    { path: '*', element: <NotFoundPage /> }, // Catches everything else
+                  ]);
 
-function NotFoundPage() {
-  return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <Link to="/">Go Home</Link>
-    </div>
-  );
-}`} />
+                  function NotFoundPage() {
+                    return (
+                      <div>
+                        <h1>404 - Page Not Found</h1>
+                        <Link to="/">Go Home</Link>
+                      </div>
+                    );
+                  }`} />
 
           <div className="bg-yellow-50 rounded-lg p-4 mt-4">
             <p className="text-sm text-gray-700 mb-3">

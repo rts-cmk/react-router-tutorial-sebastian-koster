@@ -187,46 +187,46 @@ export const WhatIsRouterPage = () => {
 
                         {activeTab === 'without' ? (
                             <CodeBlock code={`function App() {
-  const [page, setPage] = useState('home');
+                            const [page, setPage] = useState('home');
   
-  return (
-    <div>
-      <button onClick={() => setPage('home')}>Home</button>
-      <button onClick={() => setPage('about')}>About</button>
+                            return (
+                                <div>
+                                <button onClick={() => setPage('home')}>Home</button>
+                                <button onClick={() => setPage('about')}>About</button>
       
-      {page === 'home' && <HomePage />}
-      {page === 'about' && <AboutPage />}
-    </div>
-  );
-}
+                                {page === 'home' && <HomePage />}
+                                {page === 'about' && <AboutPage />}
+                                </div>
+                            );
+                            }
 
-// ❌ Problems:
-// - URL doesn't change
-// - Can't bookmark pages
-// - Browser back button doesn't work
-// - Can't share specific pages`} />
+                            // ❌ Problems:
+                            // - URL doesn't change
+                            // - Can't bookmark pages
+                            // - Browser back button doesn't work
+                            // - Can't share specific pages`} />
                         ) : (
                             <CodeBlock code={`function App() {
-  return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+                            return (
+                                <BrowserRouter>
+                                <nav>
+                                    <Link to="/">Home</Link>
+                                    <Link to="/about">About</Link>
+                                </nav>
       
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+                                <Routes>
+                                    <Route path="/" element={<HomePage />} />
+                                    <Route path="/about" element={<AboutPage />} />
+                                </Routes>
+                                </BrowserRouter>
+                            );
+                            }
 
-// ✅ Benefits:
-// - URLs change (/, /about)
-// - Can bookmark any page
-// - Browser navigation works
-// - Shareable links!`} />
+                            // ✅ Benefits:
+                            // - URLs change (/, /about)
+                            // - Can bookmark any page
+                            // - Browser navigation works
+                            // - Shareable links!`} />
                         )}
                     </div>
                 </div>
@@ -273,17 +273,17 @@ export const HowToUsePage = () => {
                     <p className="text-gray-600 mb-4">Create your router configuration in main.jsx:</p>
 
                     <CodeBlock code={`import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
+                            import HomePage from './HomePage';
+                            import AboutPage from './AboutPage';
 
-const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-]);
+                            const router = createBrowserRouter([
+                            { path: '/', element: <HomePage /> },
+                            { path: '/about', element: <AboutPage /> },
+                            ]);
 
-createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-);`} />
+                            createRoot(document.getElementById('root')).render(
+                            <RouterProvider router={router} />
+                            );`} />
                 </div>
 
                 {/* Navigation with Link */}
@@ -297,15 +297,15 @@ createRoot(document.getElementById('root')).render(
 
                     <CodeBlock code={`import { Link } from 'react-router-dom';
 
-function Navigation() {
-  return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </nav>
-  );
-}`} />
+                            function Navigation() {
+                            return (
+                                <nav>
+                                <Link to="/">Home</Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/contact">Contact</Link>
+                                </nav>
+                            );
+                            }`} />
 
                     <div className="bg-blue-50 rounded-lg p-4 mt-4">
                         <p className="text-sm text-gray-700">
@@ -326,17 +326,17 @@ function Navigation() {
 
                     <CodeBlock code={`import { useNavigate } from 'react-router-dom';
 
-function LoginForm() {
-  const navigate = useNavigate();
+                            function LoginForm() {
+                            const navigate = useNavigate();
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ... login logic
-    navigate('/dashboard'); // Redirect after login
-  };
+                            const handleSubmit = (e) => {
+                                e.preventDefault();
+                                // ... login logic
+                                navigate('/dashboard'); // Redirect after login
+                            };
   
-  return <form onSubmit={handleSubmit}>...</form>;
-}`} />
+                            return <form onSubmit={handleSubmit}>...</form>;
+                            }`} />
 
                     <div className="mt-4">
                         <button
@@ -360,20 +360,20 @@ function LoginForm() {
                     <p className="text-gray-600 mb-4">Create routes with parameters using useParams:</p>
 
                     <CodeBlock code={`// In your router config:
-{ path: '/user/:id', element: <UserProfile /> }
+                            { path: '/user/:id', element: <UserProfile /> }
 
-// In your component:
-import { useParams } from 'react-router-dom';
+                            // In your component:
+                            import { useParams } from 'react-router-dom';
 
-function UserProfile() {
-  const { id } = useParams();
+                            function UserProfile() {
+                            const { id } = useParams();
   
-  return <h1>User Profile: {id}</h1>;
-}
+                            return <h1>User Profile: {id}</h1>;
+                            }
 
-// Links:
-<Link to="/user/123">User 123</Link>
-<Link to="/user/456">User 456</Link>`} />
+                            // Links:
+                            <Link to="/user/123">User 123</Link>
+                            <Link to="/user/456">User 456</Link>`} />
 
                     <p className="text-gray-600 mt-4">
                         Ready to see this in action? Let's check out a real example with data fetching!
@@ -390,19 +390,19 @@ function UserProfile() {
                     <p className="text-gray-600 mb-4">Catch all unmatched routes with a wildcard:</p>
 
                     <CodeBlock code={`const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '/about', element: <AboutPage /> },
-  { path: '*', element: <NotFoundPage /> }, // Catches everything else
-]);
+                            { path: '/', element: <HomePage /> },
+                            { path: '/about', element: <AboutPage /> },
+                            { path: '*', element: <NotFoundPage /> }, // Catches everything else
+                            ]);
 
-function NotFoundPage() {
-  return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <Link to="/">Go Home</Link>
-    </div>
-  );
-}`} />
+                            function NotFoundPage() {
+                            return (
+                                <div>
+                                <h1>404 - Page Not Found</h1>
+                                <Link to="/">Go Home</Link>
+                                </div>
+                            );
+                            }`} />
 
                     <div className="bg-yellow-50 rounded-lg p-4 mt-4">
                         <p className="text-sm text-gray-700">
