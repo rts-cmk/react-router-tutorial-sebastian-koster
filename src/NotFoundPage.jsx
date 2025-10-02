@@ -13,7 +13,7 @@ const NotFoundPage = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-yellow-50 flex items-center justify-center p-6 relative overflow-hidden">
-            {/* Animated Background */}
+            
             <div className="absolute inset-0 opacity-10">
                 <div 
                     className="absolute top-1/4 left-1/4 w-64 h-64 bg-red-400 rounded-full blur-3xl"
@@ -48,7 +48,7 @@ const NotFoundPage = () => {
                         Looks like this route doesn't exist in our React Router configuration
                     </p>
 
-                    {/* Educational Section */}
+                    
                     <div className="bg-gradient-to-r from-orange-100 to-red-100 rounded-xl p-6 mb-8">
                         <h3 className="font-semibold text-gray-800 mb-3">
                             🎓 This is the 404 handler in action!
@@ -66,7 +66,7 @@ const NotFoundPage = () => {
                         </p>
                     </div>
 
-                    {/* Suggestions */}
+                    
                     <div className="mb-8">
                         <p className="text-gray-700 font-medium mb-4">
                             Here are some places you can go:
@@ -107,7 +107,6 @@ const NotFoundPage = () => {
                         </div>
                     </div>
 
-                    {/* Main CTA */}
                     <Link to="/welcome">
                         <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-3">
                             <span>←</span> Back to Safety
@@ -115,7 +114,6 @@ const NotFoundPage = () => {
                     </Link>
                 </div>
 
-                {/* Fun Fact */}
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-600">
                         💡 <strong>Fun Fact:</strong> HTTP 404 errors were named after room 404 at CERN where the web was born!

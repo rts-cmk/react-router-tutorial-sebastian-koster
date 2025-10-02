@@ -18,7 +18,7 @@ const OutroPage = () => {
                 />
             </div>
 
-            {/* Animated Background Elements */}
+            
             {showConfetti && (
                 <div className="absolute inset-0 pointer-events-none">
                     {[...Array(30)].map((_, i) => (
@@ -112,7 +112,7 @@ const OutroPage = () => {
                     {/* Easter Egg */}
                     <div className="mt-8 pt-8 border-t border-gray-200">
                         <p className="text-sm text-gray-500 mb-3">
-                            🎮 Want to test your 404 page?
+                             Want to test your 404 page?
                         </p>
                         <a 
                             href="/this-route-does-not-exist" 
@@ -123,10 +123,10 @@ const OutroPage = () => {
                     </div>
                 </div>
 
-                {/* Social Share */}
+                
                 <div className="text-center mt-8">
                     <p className="text-gray-600 text-sm">
-                        Built with React Router • Made with ❤️
+                        Built with React Router
                     </p>
                 </div>
             </div>

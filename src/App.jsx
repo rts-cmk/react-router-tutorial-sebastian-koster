@@ -5,7 +5,6 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Automatically redirect to welcome page
     navigate('/welcome');
   }, [navigate]);
 
