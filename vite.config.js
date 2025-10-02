@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/react-router-tutorial-sebastian-koster/',
   build: {
-    outDir: 'dist'
+    outDir: 'docs'
   }
 })
